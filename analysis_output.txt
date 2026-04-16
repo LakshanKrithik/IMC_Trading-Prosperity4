@@ -1,0 +1,23 @@
+﻿python : C:\Program Files\
+Python311\python.exe: 
+can't open file 'C:\\Users
+\\laksh\\OneDrive\\Desktop
+\\IMC Prosperity 4\\ROUND1
+\\analyze_data.py': 
+[Errno 2] No such file or 
+directory
+At line:1 char:1
++ python analyze_data.py 
+2>&1 | Out-File -FilePath 
+analysis_output.txt  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
+    + CategoryInfo        
+      : NotSpecified: (C  
+  :\Program File...le o   
+ r directory:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
