@@ -74,8 +74,7 @@ def trade_osm(order_depth: OrderDepth, position: int, pstate: PersistentState) -
             position += qty
     #   - Sell if bid is significantly above fair (rich)
     if bb >= fv + OSM_TAKE_EDGE:
-        qty = clamp(-abs(bb_vol), position, limit)
-        qty = min(qty, OSM_BASE_QTY)
+        qty = min(bb_vol, OSM_BASE_QTY, limit + position)
         if qty > 0:
             orders.append(Order(product, bb, -qty))
             position -= qty
